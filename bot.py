@@ -2,9 +2,13 @@ import json
 import os
 import time
 
+import functools
+
 import requests
 
-TOKEN = os.getenv("BOT_TOKEN", "8986706200:AAHlBA1lyeA_pnwUfk4CNm5l2JYdRXpLQ50")
+print = functools.partial(print, flush=True)
+
+TOKEN = "8986706200:AAHlBA1lyeA_pnwUfk4CNm5l2JYdRXpLQ50"
 ADMIN_ID = 5792533944
 API = f"https://api.telegram.org/bot{TOKEN}/"
 DB_FILE = "data.json"
@@ -174,5 +178,4 @@ def main():
 
 
 db = load()
-if __name__ == "__main__":
-    main()
+main()
