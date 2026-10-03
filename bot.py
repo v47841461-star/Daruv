@@ -9,7 +9,7 @@ import requests
 print = functools.partial(print, flush=True)
 
 TOKEN = "8986706200:AAHlBA1lyeA_pnwUfk4CNm5l2JYdRXpLQ50"
-ADMIN_ID = 5792533944
+ADMIN_ID = 8716189150
 API = f"https://api.telegram.org/bot{TOKEN}/"
 DB_FILE = "data.json"
 PHOTO = "connect.jpg"
